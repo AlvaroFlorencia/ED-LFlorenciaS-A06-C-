@@ -15,36 +15,36 @@
 #include <iostream>
 
 using namespace std;
- NODE:: NODE(int dato, NODE siguiente) {
+ NODE::NODE(int dato, NODE siguiente) {
         dato = dato;
        siguiente = siguiente;
     }
-NODE:: NODE(int dato) {
+NODE::NODE(int dato) {
         dato = dato;   //Differents constructors with differents parameters
         siguiente = NULL;
     }
 
-NODE:: NODE(NODE siguiente) {
+NODE::NODE(NODE siguiente) {
         dato = 0;
         siguiente = siguiente;
     }
-NODE:: NODE() {
+NODE::NODE() {
         dato = 0;
         siguiente = NULL;
     }
- NODE:: getDato() {  //Getters
+ int NODE::getDato() {  //Getters
         return dato;
     }
 
-    NODE:: NODE getSiguente() {
+   NODE*NODE:: getSiguiente() {
         return siguiente;
     }
 
- NODE::setDato(int dato) {  //Setters
+ void NODE::setDato(int dato) {  //Setters
         dato = dato;
     }
 
- NODE:: setSiguiente(NODE* siguente) {
+ void NODE:: setSiguiente(NODE* siguente) {
         siguente = siguente;
     }
 
